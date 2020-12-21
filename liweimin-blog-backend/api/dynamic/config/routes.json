@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dynamics",
+      "handler": "dynamic.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dynamics/count",
+      "handler": "dynamic.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dynamics/:id",
+      "handler": "dynamic.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dynamics",
+      "handler": "dynamic.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dynamics/:id",
+      "handler": "dynamic.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dynamics/:id",
+      "handler": "dynamic.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

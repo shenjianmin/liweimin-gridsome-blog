@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "project"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "url": {
+      "type": "string"
+    },
+    "fork": {
+      "type": "integer"
+    },
+    "mark": {
+      "type": "integer"
+    },
+    "watch": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "tags": {
+      "via": "projects",
+      "collection": "tag"
+    }
+  }
+}
